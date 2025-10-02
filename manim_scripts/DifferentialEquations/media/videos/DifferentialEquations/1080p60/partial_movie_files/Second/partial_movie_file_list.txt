@@ -1,0 +1,12 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/justin/Documents/Senior 2025-2026/BetterMath/manim_scripts/DifferentialEquations/media/videos/DifferentialEquations/1080p60/partial_movie_files/Second/3977891868_4267009296_2715627395.mp4'
+file 'file:/Users/justin/Documents/Senior 2025-2026/BetterMath/manim_scripts/DifferentialEquations/media/videos/DifferentialEquations/1080p60/partial_movie_files/Second/2852726489_753178984_2023860264.mp4'
+file 'file:/Users/justin/Documents/Senior 2025-2026/BetterMath/manim_scripts/DifferentialEquations/media/videos/DifferentialEquations/1080p60/partial_movie_files/Second/2852726489_1794608692_3907306429.mp4'
+file 'file:/Users/justin/Documents/Senior 2025-2026/BetterMath/manim_scripts/DifferentialEquations/media/videos/DifferentialEquations/1080p60/partial_movie_files/Second/2852726489_2116916644_2616740622.mp4'
+file 'file:/Users/justin/Documents/Senior 2025-2026/BetterMath/manim_scripts/DifferentialEquations/media/videos/DifferentialEquations/1080p60/partial_movie_files/Second/2852726489_960075735_3844871779.mp4'
+file 'file:/Users/justin/Documents/Senior 2025-2026/BetterMath/manim_scripts/DifferentialEquations/media/videos/DifferentialEquations/1080p60/partial_movie_files/Second/2852726489_2428774157_3501699837.mp4'
+file 'file:/Users/justin/Documents/Senior 2025-2026/BetterMath/manim_scripts/DifferentialEquations/media/videos/DifferentialEquations/1080p60/partial_movie_files/Second/2852726489_2284572966_601037760.mp4'
+file 'file:/Users/justin/Documents/Senior 2025-2026/BetterMath/manim_scripts/DifferentialEquations/media/videos/DifferentialEquations/1080p60/partial_movie_files/Second/2852726489_2506312150_93853910.mp4'
+file 'file:/Users/justin/Documents/Senior 2025-2026/BetterMath/manim_scripts/DifferentialEquations/media/videos/DifferentialEquations/1080p60/partial_movie_files/Second/2852726489_1358868413_1365577061.mp4'
+file 'file:/Users/justin/Documents/Senior 2025-2026/BetterMath/manim_scripts/DifferentialEquations/media/videos/DifferentialEquations/1080p60/partial_movie_files/Second/2852726489_3350263158_1213500214.mp4'
+file 'file:/Users/justin/Documents/Senior 2025-2026/BetterMath/manim_scripts/DifferentialEquations/media/videos/DifferentialEquations/1080p60/partial_movie_files/Second/2852726489_2408024828_2346672244.mp4'
