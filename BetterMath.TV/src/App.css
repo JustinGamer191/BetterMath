@@ -1,21 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Canva+Sans:wght@400;600;700;900&display=swap');
+
+body {
+  font-family: 'Canva Sans', sans-serif;
+  font-weight: 700;
+}
+
 .app-container {
   display: flex;
   justify-content: center;
-  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
   background: linear-gradient(135deg, #000000, #1a1a1a);
   color: white;
+  padding: 2rem;
+  box-sizing: border-box;
 }
+
 .header-text {
   font-size: 6rem;
-  font-weight: bold;
+  font-weight: 900;
   background: linear-gradient(45deg, #00b7ff, #ff66cc);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: pulse 2s infinite alternate;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow:
+    0 0 10px rgba(0, 183, 255, 0.6),
+    0 0 20px rgba(255, 102, 204, 0.6),
+    0 0 40px rgba(255, 255, 255, 0.4);
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.header-text:hover {
+  transform: scale(1.05);
+  text-shadow:
+    0 0 15px rgba(0, 183, 255, 0.8),
+    0 0 30px rgba(255, 102, 204, 0.8),
+    0 0 60px rgba(255, 255, 255, 0.6);
 }
 
 @keyframes pulse {
   0% { opacity: 0.8; }
   100% { opacity: 1; }
+}
+
+.cover-image {
+  width: 16rem;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 2rem rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease;
+  margin: 2rem auto 0 auto;
+  display: block;
+}
+
+.cover-image:hover {
+  transform: scale(1.05);
+}
+
+
+.content-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .content-row {
+    flex-direction: row;
+  }
 }
