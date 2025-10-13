@@ -1,0 +1,21 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #000000, #1a1a1a);
+  color: white;
+}
+.header-text {
+  font-size: 6rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #00b7ff, #ff66cc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.8; }
+  100% { opacity: 1; }
+}
