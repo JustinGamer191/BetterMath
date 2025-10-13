@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://justingamer191.github.io/BetterMath/",
+  "homepage": "https://BetterMath.tv/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
