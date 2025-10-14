@@ -1,12 +1,14 @@
+import { Link } from "react-router-dom";
+
 function AnimationsCover() {
   return (
-    <a href="/Animations" target="_blank" rel="noopener noreferrer">
+    <Link to="/animations">
       <img
         src="/Animations.svg"
         alt="BetterMath Animations"
         className="cover-image"
       />
-    </a>
+    </Link>
   );
 }
 

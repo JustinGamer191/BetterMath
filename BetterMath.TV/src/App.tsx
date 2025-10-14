@@ -24,7 +24,7 @@ function App() {
               </div>
             }
           />
-          <Route path="/Animations" element={<AnimationsPage />} />
+          <Route path="/animations" element={<AnimationsPage />} />
         </Routes>
       </div>
     </div>

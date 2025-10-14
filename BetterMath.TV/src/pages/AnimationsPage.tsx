@@ -5,7 +5,7 @@ const videos = [
     title: "Total Internal Reflection",
   },
   {
-    src: "/videos/CelestialSphere/CelestialSphere.mov",
+    src: "/videos/CelestialSphere/CelestialSphere.mp4",
     title: "Celestial Sphere",
   },
   { src: "/videos/MontyHall/MontyHall.mov", title: "Monty Hall Problem" },
