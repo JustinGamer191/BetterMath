@@ -1,6 +1,6 @@
 function AnimationsCover() {
   return (
-    <a href="/animations" target="_blank" rel="noopener noreferrer">
+    <a href="/Animations" target="_blank" rel="noopener noreferrer">
       <img
         src="/Animations.svg"
         alt="BetterMath Animations"
