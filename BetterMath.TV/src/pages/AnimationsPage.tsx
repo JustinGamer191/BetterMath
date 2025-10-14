@@ -1,14 +1,20 @@
 const videos = [
-  { src: "/videos/DrakeEquation1/DrakeEquation1.mov", title: "Drake Equation" },
   {
-    src: "/videos/TotalInternalReflection/TotalInternalReflection.mov",
+    src: "/finished_videos/DrakeEquation1/DrakeEquation1.mp4",
+    title: "Drake Equation",
+  },
+  {
+    src: "/finished_videos/TotalInternalReflection/TotalInternalReflection.mp4",
     title: "Total Internal Reflection",
   },
   {
-    src: "/videos/CelestialSphere/CelestialSphere.mp4",
+    src: "/finished_videos/CelestialSphere/CelestialSphere.mp4",
     title: "Celestial Sphere",
   },
-  { src: "/videos/MontyHall/MontyHall.mov", title: "Monty Hall Problem" },
+  {
+    src: "/finished_videos/MontyHall/MontyHall.mp4",
+    title: "Monty Hall Problem",
+  },
 ];
 
 function AnimationsPage() {
