@@ -81,19 +81,13 @@ body {
 
 .content-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   justify-items: center;
   margin: 2rem 1rem;
 }
 
-@media (max-width: 1200px) {
-  .content-row {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 320px) {
+@media (max-width: 500px) {
   .content-row {
     grid-template-columns: repeat(1, 1fr);
   }
