@@ -50,7 +50,7 @@ function GeometryPage() {
         }}
       >
         {videos.map((video) => (
-          <div key={video.src} style={{ width: "300px", maxWidth: "90%" }}>
+          <div key={video.src} className="video-item">
             <video
               src={video.src}
               controls

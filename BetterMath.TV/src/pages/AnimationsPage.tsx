@@ -18,10 +18,6 @@ const videos = [
     src: "/finished_videos/CelestialSphere/CelestialSphere.mp4",
     title: "Celestial Sphere",
   },
-  {
-    src: "/finished_videos/MontyHall/MontyHall.mp4",
-    title: "Monty Hall Problem",
-  },
 ];
 
 function AnimationsPage() {
@@ -30,7 +26,7 @@ function AnimationsPage() {
       <h1 className="animation-text">Recent Animations</h1>
       <div className="content-row">
         {videos.map((video) => (
-          <div key={video.src} style={{ width: "300px", maxWidth: "90%" }}>
+          <div key={video.src} className="video-item">
             <video
               src={video.src}
               controls
