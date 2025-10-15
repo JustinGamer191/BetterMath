@@ -5,6 +5,12 @@ import SourceCode from "./components/SourceCode.tsx";
 import Community from "./components/Community.tsx";
 import AnimationsPage from "./pages/AnimationsPage.tsx";
 import "./App.css";
+import AstronomyPage from "./pages/animations/AstronomyPage.tsx";
+import CalculusPage from "./pages/animations/CalculusPage.tsx";
+import GeometryPage from "./pages/animations/GeometryPage.tsx";
+import MachineLearningPage from "./pages/animations/MachineLearningPage.tsx";
+import OpticsPage from "./pages/animations/OpticsPage.tsx";
+import PsychologyPage from "./pages/animations/PsychologyPage.tsx";
 
 function App() {
   return (
@@ -17,7 +23,7 @@ function App() {
           <Route
             path="/"
             element={
-              <div className="content-row">
+              <div className="main-row">
                 <Community />
                 <AnimationsCover />
                 <SourceCode />
@@ -25,6 +31,15 @@ function App() {
             }
           />
           <Route path="/animations" element={<AnimationsPage />} />
+          <Route path="/animations/astronomy" element={<AstronomyPage />} />
+          <Route path="/animations/calculus" element={<CalculusPage />} />
+          <Route path="/animations/geometry" element={<GeometryPage />} />
+          <Route
+            path="/animations/machinelearning"
+            element={<MachineLearningPage />}
+          />
+          <Route path="/animations/optics" element={<OpticsPage />} />
+          <Route path="/animations/psychology" element={<PsychologyPage />} />
         </Routes>
       </div>
     </div>

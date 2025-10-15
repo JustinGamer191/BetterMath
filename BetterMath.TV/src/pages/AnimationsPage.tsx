@@ -1,3 +1,10 @@
+import { Routes, Route } from "react-router-dom";
+import Astronomy from "../components/Astronomy";
+import Calculus from "../components/Calculus";
+import Geometry from "../components/Geometry";
+import MachineLearning from "../components/MachineLearning";
+import Optics from "../components/Optics";
+import Psychology from "../components/Psychology";
 const videos = [
   {
     src: "/finished_videos/DrakeEquation1/DrakeEquation1.mp4",
@@ -21,16 +28,9 @@ function AnimationsPage() {
   return (
     <div className="app-container">
       <h1 className="animation-text">Recent Animations</h1>
-      <div
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "center",
-          gap: "2rem",
-        }}
-      >
+      <div className="content-row">
         {videos.map((video) => (
-          <div key={video.src} style={{ maxWidth: "200px" }}>
+          <div key={video.src} style={{ width: "300px", maxWidth: "90%" }}>
             <video
               src={video.src}
               controls
@@ -53,6 +53,21 @@ function AnimationsPage() {
         ))}
       </div>
       <h1 className="animation-text">All Animations</h1>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div className="content-row">
+              <Astronomy />
+              <Calculus />
+              <Geometry />
+              <MachineLearning />
+              <Optics />
+              <Psychology />
+            </div>
+          }
+        />
+      </Routes>
     </div>
   );
 }
