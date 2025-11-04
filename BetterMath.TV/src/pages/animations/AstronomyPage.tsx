@@ -4,7 +4,7 @@ const videos = [
     title: "Drake Equation",
   },
   {
-    src: "/finished_videos/DrakeEquation1/DrakeEquation1.mp4",
+    src: "/finished_videos/DrakeEquation2/DrakeEquation2.mp4",
     title: "Drake Equation",
   },
   {
