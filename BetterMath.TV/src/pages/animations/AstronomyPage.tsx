@@ -4,6 +4,10 @@ const videos = [
     title: "Drake Equation",
   },
   {
+    src: "/finished_videos/DrakeEquation1/DrakeEquation1.mp4",
+    title: "Drake Equation",
+  },
+  {
     src: "/finished_videos/CelestialSphere/CelestialSphere.mp4",
     title: "Celestial Sphere",
   },
