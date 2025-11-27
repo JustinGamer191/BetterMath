@@ -34,6 +34,24 @@ body {
   transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
 
+.name-text {
+  font-size: 2rem;
+  font-weight: 900;
+  background: linear-gradient(45deg, #00b7ff, #ff66cc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: pulse 2s infinite alternate;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow:
+    0 0 10px rgba(0, 183, 255, 0.6),
+    0 0 20px rgba(255, 102, 204, 0.6),
+    0 0 40px rgba(255, 255, 255, 0.4);
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
 .header-text:hover {
   transform: scale(1.05);
   text-shadow:

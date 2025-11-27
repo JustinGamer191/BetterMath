@@ -41,6 +41,7 @@ function App() {
           <Route path="/animations/optics" element={<OpticsPage />} />
           <Route path="/animations/psychology" element={<PsychologyPage />} />
         </Routes>
+        <div className="name-text">Justin Sun</div>
       </div>
     </div>
   );
