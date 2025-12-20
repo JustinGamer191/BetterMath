@@ -82,3 +82,68 @@ class Third(Scene):
         self.wait()
         self.play(Write(t3[1]))
         self.wait()
+
+
+class Fourth(Scene):
+    def construct(self):
+        black_hole = Circle(radius=0.8, color=BLACK, fill_opacity=1)
+        black_hole.set_stroke(color=WHITE, width=2)
+
+        event_horizon = Circle(radius=1.5, color=YELLOW, fill_opacity=0)
+        event_horizon.set_stroke(color=YELLOW, width=3, opacity=0.6)
+
+        bh_label = Text("Black Hole", font_size=24).next_to(black_hole, DOWN)
+        eh_label = Text("Event Horizon", font_size=20, color=YELLOW).next_to(
+            event_horizon, UP
+        )
+
+        self.play(Create(black_hole), Create(event_horizon))
+        self.play(Write(bh_label), Write(eh_label))
+        self.wait(0.5)
+
+        num_rays = 12
+        light_rays = []
+
+        for i in range(num_rays):
+            angle = i * TAU / num_rays
+            start_pos = np.array([np.cos(angle) * 5, np.sin(angle) * 5, 0])
+
+            light_dot = Dot(start_pos, color=YELLOW, radius=0.08)
+            light_dot.set_sheen(-0.5, DOWN)
+
+            trail = TracedPath(
+                light_dot.get_center,
+                stroke_color=YELLOW,
+                stroke_width=2,
+                dissipating_time=0.5,
+            )
+
+            light_rays.append((light_dot, trail, angle))
+
+        self.play(*[FadeIn(dot) for dot, _, _ in light_rays])
+
+        for _, trail, _ in light_rays:
+            self.add(trail)
+
+        animations = []
+        for dot, trail, angle in light_rays:
+
+            def curve_path(t, start_angle=angle):
+                r = 5 * (1 - t) + 0.8 * t
+                theta = start_angle + t * PI / 2
+                return np.array([np.cos(theta) * r, np.sin(theta) * r, 0])
+
+            animations.append(
+                MoveAlongPath(
+                    dot,
+                    ParametricFunction(
+                        lambda t, sa=angle: curve_path(t, sa), t_range=[0, 1]
+                    ),
+                    rate_func=rush_into,
+                    run_time=3,
+                )
+            )
+
+        self.play(*animations)
+
+        self.play(*[FadeOut(dot) for dot, _, _ in light_rays])
