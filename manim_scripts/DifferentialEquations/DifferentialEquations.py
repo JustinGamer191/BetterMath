@@ -3,7 +3,7 @@ from manim import *
 
 # --- SCENE 1: SOLVING A DIFFERENTIAL EQUATION (WITH CORRECTION) ---
 # This animation demonstrates solving dy/dx = (4+9y²)/(e^(2x+1)) step-by-step
-# Notably includes a correction from a previous video where the integration constant was forgotten
+# Includes a correction from a previous video where the integration constant and a minus sign was forgotten
 class Intro(Scene):
     def construct(self):
         # --- TITLE AND ADMISSION OF ERROR ---

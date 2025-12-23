@@ -11,8 +11,7 @@ class Intro(Scene):
         t1.scale(0.5).arrange(DOWN)
         t1.move_to([0, 1.5, 0])
 
-        # --- BLACK HOLE IMAGE ---
-        # Visual representation (likely from Event Horizon Telescope or artistic rendering)
+        # --- Brilliant BLACK HOLE IMAGE ---
         blackHole = ImageMobject("./photos/BlackHole.png")
         blackHole.scale(0.5).move_to([0, -0.5, 0])
 
@@ -155,9 +154,6 @@ class Third(Scene):
 class Fourth(Scene):
     def construct(self):
         # --- BLACK HOLE STRUCTURE ---
-
-        # Singularity region (where physics breaks down)
-        # Infinite density, zero volume
         black_hole = Circle(radius=0.8, color=BLACK, fill_opacity=1)
         black_hole.set_stroke(color=WHITE, width=2)
 
