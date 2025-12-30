@@ -117,6 +117,7 @@ class Second(Scene):
 
         # --- COMBINE AND SOLVE FOR Y ---
         # Algebraically isolate y by taking inverse tangent operations
+        # Fixed the e^(2x+1) issue here.
         m2 = MathTex(
             r"arctan(\frac{3}{2}y) = -\frac{3}{e^{2x+1}}",  # Multiply both sides by 6 and rearrange
             r"\frac{3}{2}y = tan(-\frac{3}{e^{2x+1}})",  # Take tangent of both sides

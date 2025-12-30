@@ -11,8 +11,8 @@ const videos = [
     title: "Drake Equation",
   },
   {
-    src: "/finished_videos/TotalInternalReflection/TotalInternalReflection.mp4",
-    title: "Total Internal Reflection",
+    src: "/finished_videos/Cards/Cards.mp4",
+    title: "Card Shuffling",
   },
   {
     src: "/finished_videos/CelestialSphere/CelestialSphere.mp4",
@@ -31,7 +31,7 @@ function AnimationsPage() {
               src={video.src}
               controls
               style={{
-                width: "100%",
+                width: video.title === "Card Shuffling" ? "100%" : "75%",
                 borderRadius: "0.5rem",
                 boxShadow: "0 0 2rem rgba(255,255,255,0.2)",
               }}

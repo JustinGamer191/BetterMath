@@ -170,7 +170,7 @@ class Intro(Scene):
             wheel_radius = radius
 
             # Green sector = winning region
-            green_angle = fraction * TAU  # Convert probability to angle
+            green_angle = fraction * TAU
 
             green_sector = Sector(
                 radius=wheel_radius,
@@ -364,8 +364,7 @@ class Second(Scene):
         self.wait()
         self.play(FadeOut(t6))
 
-        # --- OUTRO: BRANDING ---
-        # "AI generated outro for funsies!" - from original code
+        # AI generated outro for funsies!
         fontSize = 48
         better = Text("Better", font_size=fontSize, weight=BOLD, color=BLUE)
         math = Text("Math", font_size=fontSize, weight=BOLD, color=WHITE)
