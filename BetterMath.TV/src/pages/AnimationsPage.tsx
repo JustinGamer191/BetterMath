@@ -7,8 +7,8 @@ import Optics from "../components/Optics";
 import Psychology from "../components/Psychology";
 const videos = [
   {
-    src: "/finished_videos/DrakeEquation1/DrakeEquation1.mp4",
-    title: "Drake Equation",
+    src: "/finished_videos/LagrangePoints/LagrangePoints.mp4",
+    title: "Lagrange Points",
   },
   {
     src: "/finished_videos/Cards/Cards.mp4",
@@ -31,7 +31,7 @@ function AnimationsPage() {
               src={video.src}
               controls
               style={{
-                width: video.title === "Card Shuffling" ? "100%" : "75%",
+                width: video.title === "Celestial Sphere" ? "75%" : "100%",
                 borderRadius: "0.5rem",
                 boxShadow: "0 0 2rem rgba(255,255,255,0.2)",
               }}

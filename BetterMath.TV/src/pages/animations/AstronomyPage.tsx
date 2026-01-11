@@ -11,6 +11,10 @@ const videos = [
     src: "/finished_videos/CelestialSphere/CelestialSphere.mp4",
     title: "Celestial Sphere",
   },
+  {
+    src: "/finished_videos/LagrangePoints/LagrangePoints.mp4",
+    title: "Lagrange Points",
+  },
 ];
 
 function AstronomyPage() {
@@ -31,7 +35,7 @@ function AstronomyPage() {
               src={video.src}
               controls
               style={{
-                width: "100%",
+                width: video.title === "Lagrange Points" ? "100%" : "75%",
                 borderRadius: "0.5rem",
                 boxShadow: "0 0 2rem rgba(255,255,255,0.2)",
               }}

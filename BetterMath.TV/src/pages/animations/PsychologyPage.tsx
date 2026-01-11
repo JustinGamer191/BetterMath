@@ -7,6 +7,10 @@ const videos = [
     src: "/finished_videos/MontyHallMath/MontyHallMath.mp4",
     title: "Monty Hall(Mathematical Approach)",
   },
+  {
+    src: "/finished_videos/ParrondoParadox/ParrondoParadox.mp4",
+    title: "Parrondo's Paradox",
+  },
 ];
 
 function PsychologyPage() {
@@ -27,7 +31,7 @@ function PsychologyPage() {
               src={video.src}
               controls
               style={{
-                width: "100%",
+                width: video.title === "Parrondo's Paradox" ? "55%" : "100%",
                 borderRadius: "0.5rem",
                 boxShadow: "0 0 2rem rgba(255,255,255,0.2)",
               }}
